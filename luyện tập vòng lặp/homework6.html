@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("nhap so n bat ky");
+        var temp;
+        var count=1;
+        var total=0;
+        for(let i=10;i<a;i*=10){
+            count=count*10;
+        }
+        while(a!=0){
+            temp=a%10;       
+            total+=temp*count;
+            a=Math.floor(a/10);
+            count=count/10;
+        }
+        console.log(total);
+       
+    </script>
+</body>
+</html>

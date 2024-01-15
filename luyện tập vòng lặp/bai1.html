@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=+prompt("nhập vào 1 số bất kỳ");
+        var total=0;
+        if(isNaN(n)){
+            console.log("khong hop le");
+        }else{
+            var i;
+            for(i=1;i<=n;i++){
+            total+=i;
+            }
+            while(total%2==0){
+                total=total-i;
+                i--;      
+            }
+            console.log(total);
+        }
+    </script>
+</body>
+</html>

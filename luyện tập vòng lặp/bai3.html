@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=+prompt("nhap so n");
+        var total=0;
+        var m;
+        if(isNaN(n) || n<=0){
+            console.log("khong hop le");
+        }else{
+             var i=0;
+           while(total<n){
+            m=i;
+            i++;
+            total+=i;         
+           }
+           console.log("số nguyên dương lớn nhất:",m);
+        }
+    </script>
+</body>
+</html>

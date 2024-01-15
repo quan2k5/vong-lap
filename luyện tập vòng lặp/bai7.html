@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("nhap so a");
+        var b=+prompt("nhap so b");
+        var c=+prompt("nhap so c");
+        var d=+prompt("nhap so d");
+        var max=a;
+        var check=false;
+        var i=0;
+        max=max>=b?max:b;
+        max=max>=c?max:c;
+        max=max>=d?max:d;
+        var checkMax;
+        while(check==false){
+            i++;
+            checkMax=max;
+            checkMax*=i;
+            if(checkMax%a==0 && checkMax%b==0 && checkMax%c==0 && checkMax%d==0){
+                check=true;
+            }        
+        }
+        console.log("boi chung nho nhat la ",checkMax);
+    </script>
+</body>
+</html>

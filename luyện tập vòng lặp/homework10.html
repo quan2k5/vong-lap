@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=+prompt("nhap mot so n bat ky");
+        for(let i=n;i>0;i--){
+            for(let j=0;j<i;j++){
+                document.writeln("*");
+            }
+            document.writeln("<br>");
+        }
+       
+        for(let i=n;i>0;i--){
+            for(let j=n;j>0;j--){
+                if(j>i){          
+                    document.writeln("&nbsp;&nbsp;");
+                }else{
+                    document.writeln("*");
+                }
+            }
+            document.writeln("<br>");
+        }
+    </script>
+</body>
+</html>

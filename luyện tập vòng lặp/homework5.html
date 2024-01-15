@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=+prompt("nhap 1 so n bat ky");
+        var total=1;
+        if(n<=0 ||isNaN(n)){
+            console.log("khong hop le");
+        }else{
+            for(let i=2;i<=n;i++){
+                total+=1/(i*i*i);
+            }
+            console.log(total);
+        }
+    </script>
+</body>
+</html>

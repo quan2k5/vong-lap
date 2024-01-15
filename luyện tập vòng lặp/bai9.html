@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("nhap so a");
+        var b=+prompt("nhap so b");
+        var temp1;
+        var temp2;
+        var temp3;
+        var temp4;
+        var check
+        if(isNaN(a) ||isNaN(b)){
+            console.log("khong hop le");
+        }else{
+            if(a<b){
+                for(let i=a;i<=b;i++){
+                    temp1=i;
+                    check=false;
+                while(temp1!=0){               
+                    temp3=temp1%10;
+                    temp1=Math.floor(temp1/10);
+                    temp2=temp1;
+                    while(temp2!=0){
+                        temp4=temp2%10;
+                        if(temp3==temp4){
+                            check=true;
+                            break;
+                        }
+                        temp2=Math.floor(temp2/10);
+                    }                    
+                }
+                if(check!=true){
+                    console.log(i);                   
+                }
+                } 
+            }else if(a>b){
+                for(let i=b;i<a;i++){
+                    temp1=i;
+                    check=false;
+                while(temp1!=0){               
+                    temp3=temp1%10;
+                    temp1=Math.floor(temp1/10);
+                    temp2=temp1;
+                    while(temp2!=0){
+                        temp4=temp2%10;
+                        if(temp3==temp4){
+                            check=true;
+                            break;
+                        }
+                        temp2=Math.floor(temp2/10);
+                    }        
+                }
+                if(check!=true){
+                    console.log(i);                   
+                }
+                }
+            }else{
+                console.log("khon co so nao");
+            }          
+        }
+    </script>
+</body>
+</html>

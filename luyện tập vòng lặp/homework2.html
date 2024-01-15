@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var total=0;
+        var a=+prompt("nhập vào số nguyên dương a");
+        var b=+prompt("nhập vào số nguyên dương b");
+        if(a<=0||isNaN(a)||b<=0||isNaN(b)){
+            console.log("khong hop le");
+        }else{
+          if(a<b){
+            for(let i=a;i<=b;i++){
+                total+=i;
+            }
+            console.log("tong:",total);
+          }
+          if(a>b){
+            for(let i=b;i<=a;i++){
+                total+=i;
+            }
+            console.log("tong:",total)
+          }
+        }
+    </script>
+</body>
+</html>

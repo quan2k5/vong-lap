@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+            var a=+prompt("nhập chiều dài");
+        }while(a<=0||isNaN(a));
+        var b;
+        do{
+            b=+prompt("nhập chiều rộng");
+        }while((b>=a||b<=0)||isNaN(b));
+        var store=b;
+        var temp;
+        while(b!=0){
+            temp=b;
+            b=a%b;
+            a=temp;
+        }
+       var square=Math.floor(store/a);
+       console.log("so hinh vuong toi thieu:",square);
+    </script>
+</body>
+</html>

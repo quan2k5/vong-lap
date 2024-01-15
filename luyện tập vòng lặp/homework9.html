@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("nhap so a");
+        var b=+prompt("nhap so b");
+        var c=+prompt("nhap so c");
+        var d=+prompt("nhap so d");
+        var min=a;
+        var check=false;
+        var i=0;
+        min=min<=b?min:b;
+        min=min<=c?min:c;
+        min=min<=d?min:d;   
+        var checkMin;
+        while(check==false){
+            i++;
+            checkMin=min;
+            checkMin=min/i;
+            if(a%checkMin==0 && b%checkMin==0 && c%checkMin==0 && d%checkMin==0){
+                check=true;
+            }        
+        }
+        console.log("uoc chung lon nhat la ",checkMin);
+
+    </script>
+</body>
+</html>
